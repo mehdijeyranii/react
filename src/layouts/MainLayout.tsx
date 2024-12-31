@@ -8,9 +8,9 @@ interface MainLayoutProps {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
     return (
-        <div className="min-h-dvh relative">
+        <div className="h-dvh relative overflow-hidden">
             <Header />
-            {children}
+            <div className="h-[calc(100vh-7rem)] overflow-y-auto scrollbar ">{children}</div>
             <Footer />
         </div>
     );

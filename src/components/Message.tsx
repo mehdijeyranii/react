@@ -7,7 +7,7 @@ type MessageProps = {
 };
 
 const Message = (props: MessageProps) => {
-    const [show, setShow] = useState<boolean>(false);
+    const [show, setShow] = useState<boolean>(true);
     const { name, age, isMarried } = props;
 
     const handleClick = () => {
@@ -23,7 +23,7 @@ const Message = (props: MessageProps) => {
                 {show ? "Hidden" : "Show"}
             </button>
             {show && (
-                <div className="p-3 bg-gray-50/5 mt-2 rounded">
+                <div className="min-h-36 p-3 bg-gray-50/5 mt-2 rounded">
                     <h5 className="text-2xl font-bold text-gray-50 mb-2">
                         Hello, {name}
                     </h5>

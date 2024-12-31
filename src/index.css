@@ -7,3 +7,15 @@
         @apply bg-gray-900 text-white;
     }
 }
+
+@layer utilities {
+    .scrollbar::-webkit-scrollbar {
+        @apply w-1
+    }
+    .scrollbar::-webkit-scrollbar-thumb {
+        @apply bg-rose-500
+    }
+    .scrollbar::-webkit-scrollbar-track {
+        @apply bg-gray-800
+    }
+}
