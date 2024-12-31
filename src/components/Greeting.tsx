@@ -1,10 +1,5 @@
-import { Component, ReactNode } from "react";
-
-// Class Component
-class Greeting extends Component {
-    render(): ReactNode {
-        return <h1>Hello, World!</h1>;
-    }
-}
+const Greeting = (props: { name: string }) => {
+    return <h4>Hello, {props.name}!</h4>;
+};
 
 export default Greeting;
